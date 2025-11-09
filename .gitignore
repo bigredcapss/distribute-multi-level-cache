@@ -1,24 +1,25 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+.idea/
+.vscode/
+**/*.iml
+**/pkg/*
+**/target/*
+**/.DS_Store
+**/*.project
+**/*.settings/
+**/*.classpath
+**/catalina.base_IS_UNDEFINED
+**/src/main/webapp/WEB-INF/classes/*
 *.jar
 *.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+.DS_Store
+
+logs
+log
+
+http-client.env.json
