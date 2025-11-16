@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: infra-multi-level-cache-example
+
+  redis:
+    port: 6379
+    host: localhost
+    database: 0
+    username: root
+    password: root
+    lettuce:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-wait: 2000
+        max-active: 100
+
+multiple-cache:
+    redis:
+      - name: testCache
+        expire: 100
+    caffeine:
+      - name: testCache
+        expireAfterAccess: 30
+        initialCapacity: 100
+        maximumSize: 1000
+#  multiple:
+#    - name: testCache
+#      caffeine:
+#        expireAfterAccess: 30
+#        initialCapacity: 100
+#        maximumSize: 1000
+#      redis:
+#        expire: 100
+
+
+
+logging:
+  level:
+    com:
+      peanut:
+        infra:
+          multilevelcache:
+            example: debug
+
+

@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.zy.github.multiple.cache.config.CacheManagerAutoConfiguration
+  com.peanut.infra.multilevelcache.config.CacheManagerAutoConfiguration
